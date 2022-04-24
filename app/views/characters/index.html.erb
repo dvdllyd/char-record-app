@@ -1,0 +1,21 @@
+<h1>Character listing page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Equipment</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+   <% @characters.each do |character| %>
+    <tr>
+      <td><%= character.name%></td>
+      <td><%= character.equipment%></td>
+      <td>placeholder</td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
